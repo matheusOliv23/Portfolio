@@ -1,9 +1,10 @@
-function typeWriter(titulo){
+function typeWriter(){
     const textoArray = titulo.innerHTML.split('');
     titulo.innerHTML = '';
     textoArray.forEach((letra, i)=>{
         setTimeout(() =>
-            titulo.innerHTML += letra, 160 * i)        
+            titulo.innerHTML += letra, 160 * i)  
+            console.log(letra);      
         
     });
 }
